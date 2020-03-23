@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-const Like = (props) => {
+const Like = props => {
   let classes = "fa fa-heart";
   classes += props.liked ? "" : "-o";
   return (
