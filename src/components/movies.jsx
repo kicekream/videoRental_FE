@@ -15,11 +15,11 @@ class Movies extends Component {
 
   //handles the lie and unlike
   handleLike = movie => {
-    const movies = [...this.state.movies]
-    const index = movies.indexOf(movie)
-    movies[index] = {...movies[index]}
-    movies[index].liked = !movies[index].liked
-    this.setState({movies})
+    const movies = [...this.state.movies];
+    const index = movies.indexOf(movie);
+    movies[index] = { ...movies[index] };
+    movies[index].liked = !movies[index].liked;
+    this.setState({ movies });
   };
 
   render() {
