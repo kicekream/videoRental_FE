@@ -13,8 +13,13 @@ class Movies extends Component {
     this.setState({ movies });
   };
 
+  //handles the lie and unlike
   handleLike = movie => {
     const movies = [...this.state.movies]
+    const index = movies.indexOf(movie)
+    movies[index] = {...movies[index]}
+    movies[index].liked = !movies[index].liked
+    this.setState({movies})
   };
 
   render() {
